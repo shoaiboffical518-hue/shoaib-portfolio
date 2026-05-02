@@ -1,7 +1,16 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { Globe, Server, Database, Layers, Code2, Monitor } from "lucide-react";
+import { 
+  Globe, 
+  Server, 
+  Database, 
+  Layers, 
+  Code2, 
+  Search, 
+  Monitor, 
+  Layout 
+} from "lucide-react";
 import { Service } from "../types";
 import { staggerContainer, fadeInUp } from "../utils/animations";
 
@@ -13,65 +22,78 @@ const Services: React.FC = () => {
 
   const services: Service[] = [
     {
+      id: 10,
+      title: "WordPress Development",
+      description: "High-performance, responsive WordPress sites featuring custom Elementor Pro layouts, optimized PHP architectures, and seamless Custom CSS.",
+      icon: "Layout",
+    },
+    {
+      id: 11,
+      title: "SEO",
+      description: "Strategic search engine optimization including technical audits, keyword research, and on-page enhancements to boost organic rankings.",
+      icon: "Search",
+    },
+    {
       id: 1,
       title: "Frontend Development",
-      description:
-        "Responsive, fast UIs with React.js — hooks, routing, and component architecture done right.",
+      description: "Responsive, fast UIs with React.js — hooks, routing, and component architecture done right.",
       icon: "Globe",
     },
     {
       id: 2,
       title: "Backend Development",
-      description:
-        "Scalable REST APIs with Node.js and Express — authentication, middleware, and clean architecture.",
+      description: "Scalable REST APIs with Node.js and Express — authentication, middleware, and clean architecture.",
       icon: "Code2",
     },
     {
       id: 3,
       title: "Database Design",
-      description:
-        "MongoDB schema design, indexing, and aggregation pipelines for performant data storage.",
+      description: "MongoDB schema design, indexing, and aggregation pipelines for performant data storage.",
       icon: "Database",
     },
     {
       id: 4,
       title: "State Management",
-      description:
-        "Predictable global state with Redux Toolkit — slices, thunks, and RTK Query for data fetching.",
+      description: "Predictable global state with Redux Toolkit — slices, thunks, and RTK Query for data fetching.",
       icon: "Layers",
     },
     {
       id: 5,
       title: "Full Stack MERN Apps",
-      description:
-        "End-to-end web applications — from database to UI — built, deployed, and production-ready.",
+      description: "End-to-end web applications — from database to UI — built, deployed, and production-ready.",
       icon: "Server",
     },
     {
       id: 6,
       title: "Business Websites",
-      description:
-        "Custom, responsive business sites with clean design, fast performance, and SEO-friendly structure.",
+      description: "Custom, responsive business sites with clean design, fast performance, and SEO-friendly structure.",
       icon: "Monitor",
     },
   ];
 
+  // Helper function to render the correct icon based on the string name
   const getIcon = (iconName: string) => {
+    const iconProps = { className: "w-12 h-12" };
+    
     switch (iconName) {
+      case "Layout":
+        return <Layout {...iconProps} />;
+      case "Search":
+        return <Search {...iconProps} />;
       case "Globe":
-        return <Globe className="w-12 h-12" />;
+        return <Globe {...iconProps} />;
       case "Code2":
-        return <Code2 className="w-12 h-12" />;
+        return <Code2 {...iconProps} />;
       case "Database":
-        return <Database className="w-12 h-12" />;
+        return <Database {...iconProps} />;
       case "Layers":
-        return <Layers className="w-12 h-12" />;
+        return <Layers {...iconProps} />;
       case "Server":
-        return <Server className="w-12 h-12" />;
+        return <Server {...iconProps} />;
       case "Monitor":
-        return <Monitor className="w-12 h-12" />;
+        return <Monitor {...iconProps} />;
       default:
-        return <Globe className="w-12 h-12" />;
+        return <Globe {...iconProps} />;
     }
   };
 
@@ -79,8 +101,9 @@ const Services: React.FC = () => {
     <section
       id="services"
       ref={ref}
-      className="py-20 px-4 bg-gray-900 relative"
+      className="py-20 px-4 bg-gray-900 relative overflow-hidden"
     >
+      {/* Background Glow */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(0,212,255,0.1),transparent_70%)]" />
 
       <div className="relative max-w-6xl mx-auto">
@@ -105,7 +128,7 @@ const Services: React.FC = () => {
               variants={fadeInUp}
               className="group relative p-8 rounded-xl bg-gradient-to-br from-gray-800 to-gray-900 border border-gray-700 hover:border-blue-400 transition-all duration-300 transform hover:scale-105"
             >
-              <div className="text-center">
+              <div className="text-center relative z-10">
                 <div className="mb-6 flex justify-center">
                   <div className="p-4 rounded-full bg-gradient-to-r from-blue-500/20 to-purple-500/20 border border-blue-400/30 group-hover:border-blue-400/60 transition-all duration-300">
                     <div className="text-blue-400 group-hover:text-blue-300 transition-colors duration-300">
@@ -123,7 +146,7 @@ const Services: React.FC = () => {
                 </p>
               </div>
 
-              {/* Glow effect */}
+              {/* Glow effect on hover */}
               <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-blue-500 to-purple-500 opacity-0 group-hover:opacity-5 transition-opacity duration-300" />
             </motion.div>
           ))}

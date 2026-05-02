@@ -6,25 +6,25 @@ const Footer: React.FC = () => {
   const socialLinks = [
     {
       icon: Github,
-      href: "https://github.com/tufailahmedsagar/tufailahmedsagar",
+      href: "https://github.com/shoaiboffical518-hue",
       label: "GitHub",
       color: "hover:text-gray-400",
     },
     {
       icon: Linkedin,
-      href: "https://www.linkedin.com/in/tufail-ahmed-928b29257",
+      href: "https://www.linkedin.com/in/shoaib-wordpress-developer/",
       label: "LinkedIn",
       color: "hover:text-blue-400",
     },
     {
       icon: Mail,
-      href: "mailto:tufailahmedsagar951@gmail.com",
+      href: "mailto:shoaiboffical518@gmail.com",
       label: "Email",
       color: "hover:text-green-400",
     },
     {
       icon: ExternalLink,
-      href: "https://www.fiverr.com/s/42V7QXx",
+      href: "https://www.fiverr.com/users/mshoaibweb",
       label: "Fiverr",
       color: "hover:text-purple-400",
     },
@@ -66,7 +66,7 @@ const Footer: React.FC = () => {
 
         <div className="mt-8 pt-8 border-t border-gray-800 text-center">
           <p className="text-gray-500">
-            © 2025 Tufail Ahmed. All rights reserved. Built with React &
+            © 2025 Muhammad Shoaib. All rights reserved. Built with React &
             Tailwind CSS.
           </p>
         </div>

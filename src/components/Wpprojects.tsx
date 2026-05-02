@@ -16,7 +16,7 @@ const Projects: React.FC = () => {
       id: 1,
       title: "Infinity Up - Game Development Company",
       description:
-        "Next.js web application with MongoDB database for searching and discovering Islamic baby names with responsive design and easy navigation.",
+        "A high-performance, responsive WordPress showcase featuring custom layouts and interactive elements to highlight global gaming projects and XR solutions.",
       image: "./InfinityUp.png",
       technologies: ["Wordpress", "Elementor", "Elementor Pro", "Custom CSS"],
       liveUrl: "https://infinityup.org/", // Add live link if available
@@ -27,7 +27,7 @@ const Projects: React.FC = () => {
       id: 2,
       title: "Data Prism - Software Company",
       description:
-        "Professional Next.js website for a Quran learning center with mobile-first responsive layout, fast-loading pages, and SEO optimization.",
+        "A sleek, professional WordPress site for a software agency, featuring a mobile-first layout and fast-loading pages optimized for SEO.",
       image: "/dataprism.png",
       technologies: ["Wordpress", "Elementor", "Elementor Pro", "Custom CSS"],
       liveUrl: "https://thedataprism.com/",
@@ -38,7 +38,7 @@ const Projects: React.FC = () => {
       id: 3,
       title: "Nextsol- Digital Marketing Agency",
       description:
-        "Full-stack MERN web application for finding hostels across Pakistan with advanced search, interactive maps, and responsive design.",
+        "A modern WordPress platform for a digital agency, designed with a focus on conversion-optimized layouts and high-speed performance.",
       image: "/nextsol.png",
       technologies: ["Wordpress", "Elementor", "Elementor Pro", "Custom CSS"],
       liveUrl: "https://www.nextsol.pk/",
@@ -49,7 +49,7 @@ const Projects: React.FC = () => {
       id: 4,
       title: "Influx - Digital Marketing Agency",
       description:
-        "Next.js educational website for an institute, featuring responsive design, SEO optimization, and easy content management.",
+        "A streamlined agency website built on WordPress, focusing on technical SEO and efficient service management to showcase digital expertise.",
       image: "/influx.png",
      technologies: ["Wordpress", "Elementor", "Elementor Pro", "Custom CSS"],
       liveUrl: "https://influx.pk/",
@@ -61,7 +61,7 @@ const Projects: React.FC = () => {
         id: 5,
       title: "Mental Health Billing - SRG",
       description:
-        "Next.js educational website for an institute, featuring responsive design, SEO optimization, and easy content management.",
+        "A secure and professional WordPress site for medical billing services, featuring a clean UI and responsive service breakdowns.",
       image: "/medicalbilling.png",
      technologies: ["Wordpress", "Elementor", "Elementor Pro", "Custom CSS"],
       liveUrl: "https://mentalhealthbillingsrg.com/",
@@ -72,7 +72,7 @@ const Projects: React.FC = () => {
         id: 6,
       title: "Scafa - Culinary Educational Institute",
       description:
-        "Next.js educational website for an institute, featuring responsive design, SEO optimization, and easy content management.",
+        "A visually rich WordPress site for a culinary institute, designed to showcase professional cooking courses with a premium interface.",
       image: "/scafa.webp",
      technologies: ["Wordpress", "Elementor", "Elementor Pro", "Custom CSS"],
       liveUrl: "https://scafa.pk/",
@@ -83,7 +83,7 @@ const Projects: React.FC = () => {
         id: 7,
       title: "Techpulx - Digital Marketing Agency",
       description:
-        "Next.js educational website for an institute, featuring responsive design, SEO optimization, and easy content management.",
+        "A dynamic agency website developed in WordPress, featuring strategic SEO integration and a high-impact mobile-responsive design.",
       image: "/techpulx.png",
       technologies: ["Wordpress", "Elementor", "Elementor Pro", "Custom CSS"],
       liveUrl: "https://www.techpulx.com/",
@@ -105,7 +105,7 @@ const Projects: React.FC = () => {
         id: 9,
       title: "Cosmo Solaris - Solar Panel Installation Company",
       description:
-        "Next.js educational website for an institute, featuring responsive design, SEO optimization, and easy content management.",
+        "A conversion-focused WordPress site for a solar energy provider, featuring intuitive navigation and optimized lead generation layouts.",
       image: "/cosmosolaris.png",
       technologies: ["Wordpress", "Elementor", "Elementor Pro", "Custom CSS"],
       liveUrl: "https://cosmosolaris.com/",
@@ -117,7 +117,7 @@ const Projects: React.FC = () => {
         id: 10,
       title: "Green Guard Mold Removal - HackenSack NJ",
       description:
-        "Next.js educational website for an institute, featuring responsive design, SEO optimization, and easy content management.",
+        "A local service WordPress website for a mold remediation company, optimized for fast load times and high search engine visibility.",
       image: "/hackensack.png",
       technologies: ["Wordpress", "Elementor", "Elementor Pro", "Custom CSS"],
       liveUrl: "https://greenguardmoldhackensack.com/",
@@ -128,7 +128,7 @@ const Projects: React.FC = () => {
         id: 11,
       title: "New Jersey Mold Specialist",
       description:
-        "Next.js educational website for an institute, featuring responsive design, SEO optimization, and easy content management.",
+        "A robust WordPress platform for specialized environmental services, utilizing custom CSS to provide a precise and professional user experience.",
       image: "/njmold.png",
       technologies: ["Wordpress", "Elementor", "Elementor Pro", "Custom CSS"],
       liveUrl: "https://njmoldspecialist.com/",

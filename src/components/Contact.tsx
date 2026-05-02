@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { Mail, Phone, MapPin, ExternalLink } from 'lucide-react';
+import { Mail, Phone, MapPin, ExternalLink, Loader2 } from 'lucide-react';
 import emailjs from '@emailjs/browser';
 import { fadeInUp, fadeInLeft, fadeInRight } from '../utils/animations';
 
@@ -11,6 +11,7 @@ const Contact: React.FC = () => {
     triggerOnce: true,
   });
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -26,20 +27,30 @@ const Contact: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    setIsSubmitting(true);
+
+    const SERVICE_ID = "service_81wqyt5";
+    
+    // 1. UPDATE THIS LINE: Get the ID from your EmailJS 'Email Templates' list
+    const TEMPLATE_ID = "template_n6g9b5u"; 
+    
+    const PUBLIC_KEY = "llwX-pouwQBS4jFTM";
 
     emailjs.send(
-      "service_blmy1lc",   // e.g. service_xxx
-      "template_jonp58f",  // e.g. template_xxx
-      formData,
-      "25vXPaQWgLK1jlqVe"    // e.g. sOmePuBlicKeY
+      SERVICE_ID,
+      TEMPLATE_ID,
+      formData, // This must contain { name, email, message }
+      PUBLIC_KEY
     ).then(
       () => {
         alert("Message sent successfully!");
         setFormData({ name: "", email: "", message: "" });
+        setIsSubmitting(false);
       },
       (error) => {
-        console.error(error.text);
-        alert("Failed to send message. Please try again later.");
+        console.error("FAILED...", error);
+        alert("Failed to send message.");
+        setIsSubmitting(false);
       }
     );
   };
@@ -47,19 +58,19 @@ const Contact: React.FC = () => {
   const platforms = [
     {
       name: 'Fiverr',
-      url: 'https://www.fiverr.com/s/42V7QXx',
+      url: 'https://www.fiverr.com/users/mshoaibweb',
       color: 'from-green-400 to-green-600',
       hoverColor: 'hover:shadow-green-400/20'
     },
     {
       name: 'Upwork',
-      url: 'https://www.upwork.com/freelancers/~01eb312afecc0d9e88?mp_source=share',
+      url: '#', // Add your Upwork link here
       color: 'from-green-500 to-blue-500',
       hoverColor: 'hover:shadow-blue-400/20'
     },
     {
       name: 'GitHub',
-      url: 'https://github.com/tufailahmedsagar/tufailahmedsagar',
+      url: 'https://github.com/shoaiboffical518-hue',
       color: 'from-gray-600 to-gray-800',
       hoverColor: 'hover:shadow-gray-400/20'
     },
@@ -199,11 +210,21 @@ const Contact: React.FC = () => {
 
               <motion.button
                 type="submit"
-                className="w-full px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-lg hover:from-blue-400 hover:to-purple-500 transition-all duration-300 transform hover:scale-105 hover:shadow-[0_0_30px_rgba(59,130,246,0.5)]"
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
+                disabled={isSubmitting}
+                className={`w-full px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-lg transition-all duration-300 transform flex items-center justify-center gap-2 ${
+                  isSubmitting ? 'opacity-70 cursor-not-allowed' : 'hover:from-blue-400 hover:to-purple-500 hover:scale-105 hover:shadow-[0_0_30px_rgba(59,130,246,0.5)]'
+                }`}
+                whileHover={!isSubmitting ? { scale: 1.02 } : {}}
+                whileTap={!isSubmitting ? { scale: 0.98 } : {}}
               >
-                Send Message
+                {isSubmitting ? (
+                  <>
+                    <Loader2 className="w-5 h-5 animate-spin" />
+                    Sending...
+                  </>
+                ) : (
+                  'Send Message'
+                )}
               </motion.button>
             </form>
           </motion.div>

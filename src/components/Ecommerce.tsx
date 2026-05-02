@@ -17,9 +17,9 @@ const Projects: React.FC = () => {
         id: 4,
       title: "Arsons Pharma - Pharmaceutical Company",
       description:
-        "Next.js educational website for an institute, featuring responsive design, SEO optimization, and easy content management.",
+        "WooCommerce platform for a pharmaceutical leader, featuring secure product catalogs and custom integrations for medical-grade standards.",
       image: "/arsons.png",
-      technologies: ["Next.js", "React", "JavaScript", "Tailwind CSS"],
+      technologies: ["Wocommerce", "Elementor", "Elementor Pro", "Custom Integrations"],
       liveUrl: "https://arsonspharma.com/",
       githubUrl: "#",
     },
@@ -28,9 +28,9 @@ const Projects: React.FC = () => {
         id: 4,
       title: "Secret Glamor - Ecommerce Store",
       description:
-        "Next.js educational website for an institute, featuring responsive design, SEO optimization, and easy content management.",
+        "A modern retail WooCommerce website featuring a streamlined checkout process and custom UI elements to drive online sales and user engagement.",
       image: "/secretglamor.png",
-      technologies: ["Next.js", "React", "JavaScript", "Tailwind CSS"],
+      technologies: ["Wocommerce", "Elementor", "Elementor Pro", "Custom Integrations"],
       liveUrl: "https://secretglamor.com/",
       githubUrl: "#",
     },
@@ -39,7 +39,7 @@ const Projects: React.FC = () => {
         id: 4,
       title: "Oreal - Ecommerce Store",
       description:
-        "Next.js educational website for an institute, featuring responsive design, SEO optimization, and easy content management.",
+        "A dynamic WooCommerce and restaurant management site featuring online ordering, custom menu integrations, and responsive local delivery layouts.",
       image: "/oreal.png",
       technologies: ["Wocommerce", "Elementor", "Elementor Pro", "Custom Integrations"],
       liveUrl: "https://orealonline.com/",
@@ -50,7 +50,7 @@ const Projects: React.FC = () => {
          id: 4,
       title: "Snack Shack Pk - Ecommerce Store and Restaurant",
       description:
-        "Next.js educational website for an institute, featuring responsive design, SEO optimization, and easy content management.",
+        "A dynamic WooCommerce and restaurant management site featuring online ordering, custom menu integrations, and responsive local delivery layouts.",
       image: "/snackshack.png",
       technologies: ["Wocommerce", "Elementor", "Elementor Pro", "Custom Integrations"],
       liveUrl: "https://snackshackpk.com/",
@@ -61,7 +61,7 @@ const Projects: React.FC = () => {
          id: 4,
       title: "Bajwa Vision - Motorcycle Clothing Manufacturers",
       description:
-        "Next.js educational website for an institute, featuring responsive design, SEO optimization, and easy content management.",
+        "An industrial-strength B2B WooCommerce site for clothing manufacturing, featuring custom product variations and wholesale inquiry integrations.",
       image: "/BajwaVision.png",
       technologies: ["Wocommerce", "Elementor", "Elementor Pro", "Custom Integrations"],
       liveUrl: "https://bajwavision.com/",
@@ -72,7 +72,7 @@ const Projects: React.FC = () => {
          id: 4,
       title: "Thrift Finds - Ecommerce Store",
       description:
-        "Next.js educational website for an institute, featuring responsive design, SEO optimization, and easy content management.",
+        "A high-performance WooCommerce website for for thrift products, utilizing custom integrations to manage unique inventory with ease.",
       image: "/Thriftfinds.png",
       technologies: ["Wocommerce", "Elementor", "Elementor Pro", "Custom Integrations"],
       liveUrl: "https://thriftfinds.pk/",
