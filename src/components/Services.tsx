@@ -118,7 +118,7 @@ const Services: React.FC = () => {
 
         <motion.div
           variants={staggerContainer}
-          initial="hidden"
+          initial="visible"
           animate={inView ? "visible" : "hidden"}
           className="grid md:grid-cols-2 lg:grid-cols-4 gap-8"
         >
