@@ -63,14 +63,14 @@ const Contact: React.FC = () => {
       hoverColor: 'hover:shadow-green-400/20'
     },
     {
-      name: 'Upwork',
-      url: '#', // Add your Upwork link here
+      name: 'Whatsapp',
+      url: 'https://wa.me/923496759538', // Add your Whatsapp link here
       color: 'from-green-500 to-blue-500',
       hoverColor: 'hover:shadow-blue-400/20'
     },
     {
-      name: 'GitHub',
-      url: 'https://github.com/shoaiboffical518-hue',
+      name: 'X (Twitter)',
+      url: 'https://x.com/ShoaibSh60494',
       color: 'from-gray-600 to-gray-800',
       hoverColor: 'hover:shadow-gray-400/20'
     },
