@@ -16,7 +16,7 @@ import { staggerContainer, fadeInUp } from "../utils/animations";
 
 const Services: React.FC = () => {
   const [ref, inView] = useInView({
-    threshold: 0.3,
+    threshold: 0.1,
     triggerOnce: true,
   });
 
