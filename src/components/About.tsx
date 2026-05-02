@@ -32,8 +32,8 @@ const About: React.FC = () => {
               <div className="w-80 h-80 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 p-1 hover:from-blue-400 hover:to-purple-500 transition-all duration-300">
                 <div className="w-full h-full rounded-full bg-gray-900 flex items-center justify-center">
                   <img
-                    src="https://res.cloudinary.com/drpizndwi/image/upload/v1757672715/CEO_of_HafizSagarTech_s6flig.png"
-                    alt="Tufail Ahmed"
+                    src="https://influx.pk/wp-content/uploads/2025/11/Muhammad-Shoaib-Wordpress-Developer.webp"
+                    alt="Muhammad Shoaib"
                     className="w-72 h-72 rounded-full object-cover"
                   />
                 </div>
@@ -49,29 +49,19 @@ const About: React.FC = () => {
             className="space-y-6"
           >
             <h3 className="text-3xl font-bold text-white mb-4">
-              Passionate Full Stack Developer
+             Passionate Full Stack Developer & SEO Expert
             </h3>
             <p className="text-gray-300 text-lg leading-relaxed">
-              I build modern, scalable, and responsive web applications using
-              React.js, Next.js, Node.js, Express.js, MongoDB, and MySQL. With a
-              strong foundation in Java, OOP, and Spring Boot, I transform
-              complex requirements into efficient and user-friendly digital
-              solutions.
+             I am a Senior WordPress and Full Stack MERN Developer dedicated to building high-performance, scalable, and search-engine-optimized web applications. With a specialized focus on React.js, Next.js, Node.js, and MongoDB, I bridge the gap between complex backend logic and seamless, responsive user interfaces.
             </p>
             <p className="text-gray-300 text-lg leading-relaxed">
-              I have delivered high-quality projects for clients and businesses,
-              from RESTful APIs and database design to responsive user
-              interfaces. I am passionate about continuous learning and creating
-              impactful web solutions that help clients succeed in the digital
-              world.
+              With over three years of experience in the agency environment, I have a proven track record of delivering professional-grade solutions—ranging from custom PHP and WordPress ecosystems to modern headless CMS architectures. My approach combines technical precision with a strategic SEO mindset, ensuring every project isn't just functional, but also ranks high and drives business growth.
             </p>
 
             <div className="grid grid-cols-2 gap-4 mt-8">
               {[
-                "React.js & Next.js",
-                "Node.js & Express.js",
-                "MongoDB & MySQL",
-                "Java & Spring Boot",
+                "Mern Stack",
+                "Wordpress & SEO",
               ].map((skill, index) => (
                 <motion.div
                   key={skill}

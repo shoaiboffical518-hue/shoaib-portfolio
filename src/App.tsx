@@ -4,6 +4,8 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
+import Wprojects from "./components/wpprojects";
+import Ecommerce from "./components/Ecommerce";
 import Services from "./components/Services";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
@@ -14,7 +16,7 @@ function App() {
     document.documentElement.style.scrollBehavior = "smooth";
 
     // Update page title
-    document.title = "Tufail Ahmed - MERN Stack Developer | React.js & Node.js";
+    document.title = "Muhammad Shoaib - MERN Stack & WordPress Developer | SEO Expert";
 
     return () => {
       document.documentElement.style.scrollBehavior = "auto";
@@ -28,6 +30,8 @@ function App() {
       <About />
       <Skills />
       <Projects />
+      <Wprojects />
+      <Ecommerce />
       <Services />
       <Contact />
       <Footer />

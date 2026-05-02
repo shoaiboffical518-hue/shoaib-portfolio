@@ -36,10 +36,10 @@ const Footer: React.FC = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
             <h3 className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
-              Tufail Ahmed
+              Muhammad Shoaib
             </h3>
             <p className="text-gray-400 mt-2">
-              MERN Stack Developer | React.js & Node.js
+              MERN Stack & Wordpress Developer | SEO Expert
             </p>
           </div>
 

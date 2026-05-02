@@ -11,11 +11,29 @@ const Skills: React.FC = () => {
   });
 
   const skills: Skill[] = [
+      { 
+      name: 'WordPress', 
+      level: 100, 
+      category: 'language',
+      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg'
+    },
+    { 
+      name: 'SEO', 
+      level: 100, 
+      category: 'language',
+      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-plain.svg'
+    },
     { 
       name: 'React.js', 
       level: 95, 
       category: 'frontend',
       icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg'
+    },
+      { 
+      name: 'Node.js', 
+      level: 92, 
+      category: 'backend',
+      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg'
     },
     { 
       name: 'Next.js', 
@@ -24,16 +42,16 @@ const Skills: React.FC = () => {
       icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg'
     },
     { 
-      name: 'Node.js', 
-      level: 92, 
-      category: 'backend',
-      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg'
-    },
-    { 
       name: 'Express.js', 
       level: 88, 
       category: 'backend',
       icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg'
+    },
+         { 
+      name: 'TypeScript', 
+      level: 88, 
+      category: 'language',
+      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg'
     },
     { 
       name: 'MongoDB', 
@@ -41,24 +59,7 @@ const Skills: React.FC = () => {
       category: 'database',
       icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg'
     },
-    { 
-      name: 'MySQL', 
-      level: 87, 
-      category: 'database',
-      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg'
-    },
-    { 
-      name: 'Java', 
-      level: 90, 
-      category: 'language',
-      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg'
-    },
-    { 
-      name: 'TypeScript', 
-      level: 88, 
-      category: 'language',
-      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg'
-    },
+  
   ];
 
   const getCategoryColor = (category: string) => {

@@ -65,7 +65,7 @@ const Contact: React.FC = () => {
     },
     {
       name: 'LinkedIn',
-      url: 'https://www.linkedin.com/in/tufail-ahmed-928b29257',
+      url: 'https://www.linkedin.com/in/shoaib-wordpress-developer/',
       color: 'from-blue-600 to-blue-800',
       hoverColor: 'hover:shadow-blue-400/20'
     }
@@ -106,7 +106,7 @@ const Contact: React.FC = () => {
                 </div>
                 <div>
                   <h3 className="text-white font-semibold">Email</h3>
-                  <p className="text-gray-400">tufailahmedsagar951@gmail.com</p>
+                  <p className="text-gray-400">shoaiboffical518@gmail.com</p>
                 </div>
               </div>
               
@@ -116,7 +116,7 @@ const Contact: React.FC = () => {
                 </div>
                 <div>
                   <h3 className="text-white font-semibold">Phone</h3>
-                  <p className="text-gray-400">+92 317-4512095</p>
+                  <p className="text-gray-400">+92 3496759538</p>
                 </div>
               </div>
               

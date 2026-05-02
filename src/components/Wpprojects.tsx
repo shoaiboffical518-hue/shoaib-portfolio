@@ -7,52 +7,136 @@ import { staggerContainer, fadeInUp } from "../utils/animations";
 
 const Projects: React.FC = () => {
   const [ref, inView] = useInView({
-    threshold: 0.3,
+    threshold: 0.1,
     triggerOnce: true,
   });
 
   const projects: Project[] = [
     {
-      id: 2,
-      title: "Islamic Baby Name Finder Tool",
+      id: 1,
+      title: "Infinity Up - Game Development Company",
       description:
         "Next.js web application with MongoDB database for searching and discovering Islamic baby names with responsive design and easy navigation.",
-      image: "/hafizsagar-tech.png",
-      technologies: ["Next.js", "MongoDB", "React", "Tailwind CSS"],
-      liveUrl: "https://www.findislamicnames.com/", // Add live link if available
+      image: "./InfinityUp.png",
+      technologies: ["Wordpress", "Elementor", "Elementor Pro", "Custom CSS"],
+      liveUrl: "https://infinityup.org/", // Add live link if available
+      githubUrl: "#",
+    },
+
+ {
+      id: 2,
+      title: "Data Prism - Software Company",
+      description:
+        "Professional Next.js website for a Quran learning center with mobile-first responsive layout, fast-loading pages, and SEO optimization.",
+      image: "/dataprism.png",
+      technologies: ["Wordpress", "Elementor", "Elementor Pro", "Custom CSS"],
+      liveUrl: "https://thedataprism.com/",
       githubUrl: "#",
     },
 
     {
       id: 3,
-      title: "TopHostels – Hostel Finder",
+      title: "Nextsol- Digital Marketing Agency",
       description:
         "Full-stack MERN web application for finding hostels across Pakistan with advanced search, interactive maps, and responsive design.",
-      image: "/Hafiz-Sagar-Tech.png",
-      technologies: ["React", "Node.js", "Express", "MySQL"],
-      liveUrl: "https://www.tophostels.pk/",
+      image: "/nextsol.png",
+      technologies: ["Wordpress", "Elementor", "Elementor Pro", "Custom CSS"],
+      liveUrl: "https://www.nextsol.pk/",
       githubUrl: "#",
     },
-    {
-      id: 1,
-      title: "Divine Quran Center",
-      description:
-        "Professional Next.js website for a Quran learning center with mobile-first responsive layout, fast-loading pages, and SEO optimization.",
-      image: "/DivineQuranCenter.png",
-      technologies: ["Next.js", "React", "JavaScript", "Tailwind CSS"],
-      liveUrl: "https://divine-quran-center.vercel.app/",
-      githubUrl: "#",
-    },
+   
     {
       id: 4,
-      title: "Learn Quran Universal",
+      title: "Influx - Digital Marketing Agency",
       description:
         "Next.js educational website for an institute, featuring responsive design, SEO optimization, and easy content management.",
-      image: "/hafizsagartech.png",
-      technologies: ["Next.js", "React", "JavaScript", "Tailwind CSS"],
-      liveUrl: "https://www.learnquranuniversal.com/",
+      image: "/influx.png",
+     technologies: ["Wordpress", "Elementor", "Elementor Pro", "Custom CSS"],
+      liveUrl: "https://influx.pk/",
       githubUrl: "#",
     },
+
+
+      {
+        id: 5,
+      title: "Mental Health Billing - SRG",
+      description:
+        "Next.js educational website for an institute, featuring responsive design, SEO optimization, and easy content management.",
+      image: "/medicalbilling.png",
+     technologies: ["Wordpress", "Elementor", "Elementor Pro", "Custom CSS"],
+      liveUrl: "https://mentalhealthbillingsrg.com/",
+      githubUrl: "#",
+    },
+
+        {
+        id: 6,
+      title: "Scafa - Culinary Educational Institute",
+      description:
+        "Next.js educational website for an institute, featuring responsive design, SEO optimization, and easy content management.",
+      image: "/scafa.webp",
+     technologies: ["Wordpress", "Elementor", "Elementor Pro", "Custom CSS"],
+      liveUrl: "https://scafa.pk/",
+      githubUrl: "#",
+    },
+
+     {
+        id: 7,
+      title: "Techpulx - Digital Marketing Agency",
+      description:
+        "Next.js educational website for an institute, featuring responsive design, SEO optimization, and easy content management.",
+      image: "/techpulx.png",
+      technologies: ["Wordpress", "Elementor", "Elementor Pro", "Custom CSS"],
+      liveUrl: "https://www.techpulx.com/",
+      githubUrl: "#",
+    },
+
+     {
+        id: 8,
+      title: "Unique Solution - Fabric Industry in Oman",
+      description:
+        "Next.js educational website for an institute, featuring responsive design, SEO optimization, and easy content management.",
+      image: "/UniqeSolution.png",
+      technologies: ["Wordpress", "Elementor", "Elementor Pro", "Custom CSS"],
+      liveUrl: "https://uniquesolutionsintl.com/",
+      githubUrl: "#",
+    },
+
+      {
+        id: 9,
+      title: "Cosmo Solaris - Solar Panel Installation Company",
+      description:
+        "Next.js educational website for an institute, featuring responsive design, SEO optimization, and easy content management.",
+      image: "/cosmosolaris.png",
+      technologies: ["Wordpress", "Elementor", "Elementor Pro", "Custom CSS"],
+      liveUrl: "https://cosmosolaris.com/",
+      githubUrl: "#",
+    },
+
+    
+     {
+        id: 10,
+      title: "Green Guard Mold Removal - HackenSack NJ",
+      description:
+        "Next.js educational website for an institute, featuring responsive design, SEO optimization, and easy content management.",
+      image: "/hackensack.png",
+      technologies: ["Wordpress", "Elementor", "Elementor Pro", "Custom CSS"],
+      liveUrl: "https://greenguardmoldhackensack.com/",
+      githubUrl: "#",
+    },
+
+     {
+        id: 11,
+      title: "New Jersey Mold Specialist",
+      description:
+        "Next.js educational website for an institute, featuring responsive design, SEO optimization, and easy content management.",
+      image: "/njmold.png",
+      technologies: ["Wordpress", "Elementor", "Elementor Pro", "Custom CSS"],
+      liveUrl: "https://njmoldspecialist.com/",
+      githubUrl: "#",
+    },
+
+
+    
   ];
 
   return (
@@ -64,11 +148,11 @@ const Projects: React.FC = () => {
       <div className="max-w-7xl mx-auto">
         <motion.h2
           variants={fadeInUp}
-          initial="hidden"
+          initial="visible"
           animate={inView ? "visible" : "hidden"}
           className="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent"
         >
-          MERN Stack Projects
+          WordPress Projects
         </motion.h2>
 
         <motion.div

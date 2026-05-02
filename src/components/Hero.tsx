@@ -11,13 +11,21 @@ const Hero: React.FC = () => {
   const containerRef = useRef<HTMLDivElement>(null);
 
   const phrases = [
-    "Full Stack MERN Developer",
-    "React.js & Node.js Expert",
-    "REST API & Database Integration",
-    "Java OOP & Data Structures",
-    "Responsive & Scalable Web Apps",
-    "Next.js Business Websites",
-    "Freelance & Client Solutions",
+    "Full Stack MERN & WordPress Developer",
+
+    "SEO Expert & Performance Optimizer",
+
+    "Custom React & Next.js Web Solutions",
+
+    "WordPress Theme & Plugin Customization",
+
+    "On-Page, Technical & Local SEO Strategy",
+
+    "RESTful API & Headless CMS Integration",
+
+    "Scalable Database Design (MongoDB & SQL)",
+
+    "High-Ranking Responsive Business Websites",
   ];
 
   // Coding symbols for the background
@@ -366,11 +374,11 @@ const Hero: React.FC = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white via-blue-100 to-purple-200 bg-clip-text text-transparent"
+          className="text-8xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-white via-blue-100 to-purple-200 bg-clip-text text-transparent"
         >
           Hi, I'm{" "}
           <span className="text-transparent bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text">
-            Tufail Ahmed
+            Muhammad Shoaib
           </span>
         </motion.h1>
 
@@ -380,7 +388,7 @@ const Hero: React.FC = () => {
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
           className="text-xl md:text-3xl font-semibold mb-8 text-gray-300"
         >
-          MERN Stack Developer | React.js & Node.js
+          MERN Stack & WordPress Developer | SEO Expert
         </motion.h2>
 
         <motion.div

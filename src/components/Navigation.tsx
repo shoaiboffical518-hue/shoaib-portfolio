@@ -76,7 +76,7 @@ const Navigation: React.FC = () => {
             className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent"
             whileHover={{ scale: 1.05 }}
           >
-            Tufail Ahmed
+            Muhammad Shoaib
           </motion.div>
 
           {/* Desktop Navigation */}

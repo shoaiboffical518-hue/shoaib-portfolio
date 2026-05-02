@@ -12,47 +12,73 @@ const Projects: React.FC = () => {
   });
 
   const projects: Project[] = [
+
     {
-      id: 2,
-      title: "Islamic Baby Name Finder Tool",
+        id: 4,
+      title: "Arsons Pharma - Pharmaceutical Company",
       description:
-        "Next.js web application with MongoDB database for searching and discovering Islamic baby names with responsive design and easy navigation.",
-      image: "/hafizsagar-tech.png",
-      technologies: ["Next.js", "MongoDB", "React", "Tailwind CSS"],
-      liveUrl: "https://www.findislamicnames.com/", // Add live link if available
+        "Next.js educational website for an institute, featuring responsive design, SEO optimization, and easy content management.",
+      image: "/arsons.png",
+      technologies: ["Next.js", "React", "JavaScript", "Tailwind CSS"],
+      liveUrl: "https://arsonspharma.com/",
+      githubUrl: "#",
+    },
+
+       {
+        id: 4,
+      title: "Secret Glamor - Ecommerce Store",
+      description:
+        "Next.js educational website for an institute, featuring responsive design, SEO optimization, and easy content management.",
+      image: "/secretglamor.png",
+      technologies: ["Next.js", "React", "JavaScript", "Tailwind CSS"],
+      liveUrl: "https://secretglamor.com/",
+      githubUrl: "#",
+    },
+
+      {
+        id: 4,
+      title: "Oreal - Ecommerce Store",
+      description:
+        "Next.js educational website for an institute, featuring responsive design, SEO optimization, and easy content management.",
+      image: "/oreal.png",
+      technologies: ["Wocommerce", "Elementor", "Elementor Pro", "Custom Integrations"],
+      liveUrl: "https://orealonline.com/",
       githubUrl: "#",
     },
 
     {
-      id: 3,
-      title: "TopHostels – Hostel Finder",
-      description:
-        "Full-stack MERN web application for finding hostels across Pakistan with advanced search, interactive maps, and responsive design.",
-      image: "/Hafiz-Sagar-Tech.png",
-      technologies: ["React", "Node.js", "Express", "MySQL"],
-      liveUrl: "https://www.tophostels.pk/",
-      githubUrl: "#",
-    },
-    {
-      id: 1,
-      title: "Divine Quran Center",
-      description:
-        "Professional Next.js website for a Quran learning center with mobile-first responsive layout, fast-loading pages, and SEO optimization.",
-      image: "/DivineQuranCenter.png",
-      technologies: ["Next.js", "React", "JavaScript", "Tailwind CSS"],
-      liveUrl: "https://divine-quran-center.vercel.app/",
-      githubUrl: "#",
-    },
-    {
-      id: 4,
-      title: "Learn Quran Universal",
+         id: 4,
+      title: "Snack Shack Pk - Ecommerce Store and Restaurant",
       description:
         "Next.js educational website for an institute, featuring responsive design, SEO optimization, and easy content management.",
-      image: "/hafizsagartech.png",
-      technologies: ["Next.js", "React", "JavaScript", "Tailwind CSS"],
-      liveUrl: "https://www.learnquranuniversal.com/",
+      image: "/snackshack.png",
+      technologies: ["Wocommerce", "Elementor", "Elementor Pro", "Custom Integrations"],
+      liveUrl: "https://snackshackpk.com/",
       githubUrl: "#",
     },
+
+     {
+         id: 4,
+      title: "Bajwa Vision - Motorcycle Clothing Manufacturers",
+      description:
+        "Next.js educational website for an institute, featuring responsive design, SEO optimization, and easy content management.",
+      image: "/BajwaVision.png",
+      technologies: ["Wocommerce", "Elementor", "Elementor Pro", "Custom Integrations"],
+      liveUrl: "https://bajwavision.com/",
+      githubUrl: "#",
+    },
+
+    {
+         id: 4,
+      title: "Thrift Finds - Ecommerce Store",
+      description:
+        "Next.js educational website for an institute, featuring responsive design, SEO optimization, and easy content management.",
+      image: "/Thriftfinds.png",
+      technologies: ["Wocommerce", "Elementor", "Elementor Pro", "Custom Integrations"],
+      liveUrl: "https://thriftfinds.pk/",
+      githubUrl: "#",
+    },
+    
   ];
 
   return (
@@ -68,7 +94,7 @@ const Projects: React.FC = () => {
           animate={inView ? "visible" : "hidden"}
           className="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent"
         >
-          MERN Stack Projects
+          Ecommerce Projects
         </motion.h2>
 
         <motion.div
